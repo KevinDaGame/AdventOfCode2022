@@ -1,11 +1,10 @@
-package com.github.kevindagame;
+package com.github.kevindagame.day1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,7 +34,7 @@ public class Main {
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(instances.stream().max(Integer::compare));
+        System.out.println(instances.stream().max(Integer::compare).get());
         System.out.println(getMax());
     }
 
