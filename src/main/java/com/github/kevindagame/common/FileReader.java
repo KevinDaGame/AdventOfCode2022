@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class FileReader {
     public static List<String> readFile(String file) throws URISyntaxException, FileNotFoundException {
         List<String> lines = new ArrayList<>();
-        URL resource = Main.class.getClassLoader().getResource("day2.txt");
+        URL resource = Main.class.getClassLoader().getResource(file);
         assert resource != null;
         File myObj = new File(resource.toURI());
         Scanner myReader = new Scanner(myObj);
